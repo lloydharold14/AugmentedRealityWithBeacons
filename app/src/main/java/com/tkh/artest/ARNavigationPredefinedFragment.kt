@@ -156,7 +156,7 @@ class ARNavigationPredefinedFragment : Fragment() {
             }
 
         ModelRenderable.builder()
-            .setSource(requireContext(), Uri.parse("https://github.com/KhronosGroup/glTF-Sample-Models/raw/master/2.0/Duck/glTF-Binary/Duck.glb"))
+            .setSource(requireContext(), R.raw.arrow)
             .setRegistryId("arrow_model")
             .build()
             .thenAccept { model ->
