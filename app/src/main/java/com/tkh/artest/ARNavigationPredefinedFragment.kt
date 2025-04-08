@@ -156,7 +156,8 @@ class ARNavigationPredefinedFragment : Fragment() {
             }
 
         ModelRenderable.builder()
-            .setSource(requireContext(), Uri.parse("arrow.glb"))
+            .setSource(requireContext(), Uri.parse("https://github.com/KhronosGroup/glTF-Sample-Models/raw/master/2.0/Duck/glTF-Binary/Duck.glb"))
+            .setRegistryId("arrow_model")
             .build()
             .thenAccept { model ->
                 arrowRenderable = model
@@ -223,7 +224,6 @@ class ARNavigationPredefinedFragment : Fragment() {
     class CustomArFragment : ArFragment() {
         override fun getSessionConfiguration(session: Session?): Config {
             return Config(session).apply {
-                lightEstimationMode = Config.LightEstimationMode.ENVIRONMENTAL_HDR
                 depthMode = Config.DepthMode.AUTOMATIC
                 updateMode = Config.UpdateMode.LATEST_CAMERA_IMAGE
             }

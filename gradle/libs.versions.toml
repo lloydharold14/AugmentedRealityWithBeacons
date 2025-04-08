@@ -1,6 +1,6 @@
 [versions]
 agp = "8.7.3"
-core = "1.48.0"
+arcore = "1.48.0"
 kotlin = "2.0.0"
 coreKtx = "1.15.0"
 junit = "4.13.2"
@@ -19,7 +19,7 @@ fragmentKtx = "1.8.6"
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-legacy-support-v4 = { module = "androidx.legacy:legacy-support-v4", version.ref = "legacySupportV4" }
-core = { module = "com.google.ar:core", version.ref = "core" }
+arcore = { module = "com.google.ar:core", version.ref = "arcore" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }

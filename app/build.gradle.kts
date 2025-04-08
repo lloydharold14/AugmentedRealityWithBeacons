@@ -56,7 +56,7 @@ dependencies {
     implementation(libs.androidx.legacy.support.v4)
 
     implementation(libs.androidx.legacy.support.v4)
-    implementation (libs.core)
+    implementation (libs.arcore)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
